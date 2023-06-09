@@ -34,7 +34,7 @@ if use_defo:
 st.sidebar.header('Impor File Dataset untuk Menggunakan Fitur yang Tersedia: 👉')
 
 if dataset is not None:
-    if file_format == 'csv':
+    if file_format == 'csv' or use_defo :
         df = pd.read_csv(dataset)
     else:
         df = pd.read_excel(dataset)
